@@ -16,16 +16,20 @@ func main() {
 		URL:       "http:// www.Ekenny.com/facebook",
 		Username:  "E_kenny",
 		Followers: 1000,
+		Facebookfeed: []string{
+			"This is start.NG internship", "I know you know it", "but I have to tell you"},
 	}
 	tw = &exporter.Twitter{
-		URL:       "http:// www.Ekenny.com/twitter",
-		Username:  "E_kenny",
-		Followers: 5000,
+		URL:         "http:// www.Ekenny.com/twitter",
+		Username:    "E_kenny",
+		Followers:   5000,
+		Twitterfeed: []string{"I know you know I need the money", "Thanks to the Cyberelf himself", "You are the best and I am happy being here"},
 	}
 	li = &exporter.Linkedin{
-		URL:       "http:// www.Ekenny.com/linkin",
-		Username:  "E_kenny",
-		Followers: 15000,
+		URL:          "http:// www.Ekenny.com/linkin",
+		Username:     "E_kenny",
+		Followers:    15000,
+		Linkedinfeed: []string{"I know you know I need the money", "Time for business", "I love my Job"},
 	}
 	err := export(fb, "fbdata.xml")
 	err = export(tw, "twdata.xml")
